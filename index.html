@@ -1,31 +1,606 @@
-<!doctype html>
-<title>Site Maintenance</title>
-<style>
-    body {
-        text-align: center;
-        padding: 150px;
-    }
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
 
-    h1 {
-        font-size: 50px;
-    }
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Wyatt Revalee</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    body {
-        font: 20px Helvetica, sans-serif;
-        color: #ffffff;
-        background-color: black;
-    }
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    article {
-        display: block;
-        text-align: center;
-        width: 650px;
-        margin: 0 auto;
-    }
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 
-</style>
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
-<article>
-    <h1>Under Maintenance</h1>
-    <h2 style="color: darkgray;">Hopefully back soon but I'm busy :P</h2>
-</article>
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- site header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <!-- <img src="images/intro-pic.jpg" alt="Homepage"> -->
+                <h1 style="color:white;">Wyatt Revalee</h1>
+            </a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-main-nav">
+                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
+                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+                <li><a class="smoothscroll" href="#services" title="services">Skills</a></li>
+                <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
+                <li><a class="smoothscroll" href="#contact" title="contact us">Say Hello</a></li>	
+            </ul>
+
+            <ul class="header-social">
+                <li><a href="https://github.com/wyatt-revalee"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/wyatt-revalee-a632901a9/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- intro
+    ================================================== -->
+    <section id="intro" class="s-intro target-section">
+
+        <div class="row intro-content">
+
+            <div class="column large-9 mob-full intro-text">
+                <h3>Hello, I'm Wyatt Revalee</h3>
+                <h1>
+                    An IT/Dev based in Indianapolis.
+                </h1>
+            </div>
+
+            <div class="intro-scroll">
+                <a href="#about" class="intro-scroll-link smoothscroll">
+                    Scroll For More
+                </a>
+            </div>
+
+            <div class="intro-grid"></div>
+            <div class="intro-pic"></div>
+
+        </div> <!-- end row -->
+
+    </section> <!-- end intro -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="about-me">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading" style="color: black;">About Me</h2>
+                </div>
+            </div>
+
+            <div class="row about-me__content" data-aos="fade-up">
+                <div class="column large-full about-me__text">
+                    <p class="lead">
+                    In 2023 I graduated from Indiana State University with a Bachelor's Degree in Computer Science.
+                    </p>
+
+                    <p>
+                Throughout my time at university, I was exposed to a broad range of programming and IT concepts — from foundational
+                coding and IT principles, to more advanced topics like software development, systems architecture, and digital forensics.
+                    </p>
+
+                    <p>
+                    My hope is to be able to make an impact on the world through IT and programming. 
+                    </p>
+
+                    <p>
+                    My interest in computer science and technology in general started when I was young.
+                    Technology was all around me and as I grew up, it did too. I was able to experience that in real time, and I realized I wanted to be a part of it.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="row about-me__buttons">
+                <div class="column tab-full" data-aos="fade-up">
+                    <a href="mailto:wyatt.revalee@gmail.com" class="btn btn--stroke full-width">Email Me</a>
+                </div>
+                <!-- <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="/Resume.pdf" class="btn btn--primary full-width">My Resume</a>
+                </div> -->
+            </div>
+
+        </div> <!-- end about-me -->
+
+        <div class="about-experience">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">Work & Education</h2>
+                </div>
+            </div>
+
+            <div class="row about-experience__timeline">
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--work"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">February 2024 - November 2024</p>
+                                <h3 class="item-title">USIC</h3>
+                                <h5>Systems Support Specialist</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Supporting rollout of propietary software to over 10,000 techs in field. </br>
+                                    Providing IT support for entire company both onsite and remotely.</br>
+                                    Windows, Android, Office 365, Zendesk, Soti MobiControl, Ninja One.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">February 2024 - November 2024</p>
+                                <h3 class="item-title">Bell Techlogix</h3>
+                                <h5>Service Desk Analyst</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Support and troubleshooting of software, hardware, and other related technology issues.
+                                    Working on a team assigned to the International Monetary Fund, serving over 2,000 customers worldwide.</p>
+                                    ServiceNow, Office365, Windows.
+                            </div>
+                        </div>
+                        
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">August 2023 - February 2024</p>
+                                <h3 class="item-title">Flying S</h3>
+                                <h5>IT Specialist</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Creating and maintaining software, implementing new cybersecurity policies, account provisioning, computer imaging, general technology troubleshooting.</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">April 2022 - November 2022</p>
+                                <h3 class="item-title">Staples</h3>
+                                <h5>Print and Marketing Tech</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Receiving and creating print jobs. Working directly with customers to meet and fulfill requests. Managing stock of supplies.</p>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">July 2020 - January 2022</p>
+                                <h3 class="item-title">Outback Steakhouse</h3>
+                                <h5>Takeaway Server</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Job responsibilities included working and managing a team to take and fulfill orders, as well as deliver them, restock supplies, and maintaing a clean workplace.</p>
+                            </div>
+                        </div> -->
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">October 2018 - February 2020</p>
+                                <h3 class="item-title">Indiana State University - Office of Information Technology</h3>
+                                <h5>Computer Technician</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>During my freshman and sophomore year and university I worked in the Tech Support Center of OIT as a computer Technician.
+                                    There I worked with a team to intake, diagnose, and fix both hardware and software issues of the faculty and staff, 
+                                    as well as switching out old equipment around campus and setting up staff with newer tech.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--education"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">August 2018 - May 2023</p>
+                                <h3 class="item-title">Indiana State Unversity</h3>
+                                <h5>Bachelor's of Science</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>I raduated from ISU in May of 2023 with a Bachelor's degree in Computer Science.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">May 2018</p>
+                                <h3 class="item-title">Hutsonville High School</h3>
+                                <h5>High School Diploma</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>I graduated from my hometown's highschool in May of 2018 with a 3.6 GPA</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- end about-experience -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id="services" class="s-services ss-dark target-section">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Skills</h2>
+
+                <p class="section-desc">
+                    Language / Software Profeciencies
+                </p>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Programming Languages</h4>
+                    <ul class="skills-description">
+                        <li>C#</li>
+                        <li>C</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Computer Networking</h4>
+                    <p class="skills-description">
+                        TCP/IP, DNS, DHCP, VPNs, Firewalls, Network Troubleshooting
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Works</h2>
+                <!-- <p class="section-desc">
+                    Here are some of the projects I've worked on in my spare time. Feel free to look around.
+                </p> -->
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="masonry-wrap">
+
+            <div class="masonry">
+                <div class="grid-sizer"></div>
+    
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/unity-game-sc.png" class="thumb-link" title="Unity Game" data-size="1050x700">
+                                <img src="images/unity-game-sc.png">
+                            </a>    
+                            <a href="devBlog/index.html" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+    
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                
+                                <a href="./devBlog/index.html">2D Unity Game</a>
+                            </h4>
+                            <p class="item-folio__cat">
+                                C#
+                            </p>
+                        </div>
+    
+                        <div class="item-folio__caption">
+                            <p>My biggest personal project. Full fledged 2D Unity Game created by me. Still a WIP, but in a playable state.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+    
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/chess.png" class="thumb-link" title="Chess" data-size="1050x700">
+                                <img src="images/chess.png">
+                            </a>
+                            <a href="chessGame/index.html" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                            
+                                <a href="chessGame/index.html">Chess Game</a>
+                            </h4>
+                            <p class="item-folio__cat">
+                                JavaScript
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>A Chess game made using HTML, CSS, and Javascript. Uses an O-O approach.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                
+                        <div class="item-folio__thumb">
+                            <a href="images/social-app.png" class="thumb-link" title="social app home" data-size="1050x700">
+                                <img src="images/social-app.png">
+                            </a>
+                            <a href="social-app/index.html" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                <a href="social-app/index.html">Social Media App</a>
+                            </h4>
+                            <p class="item-folio__cat">
+                                React / Node.JS / MongoDB
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>A social media app built using React, NodeJS, and MongoDB. WIP.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="AuthorIdentification/thumbnail.png" class="thumb-link" title="Chess" data-size="1050x700">
+                                <img src="AuthorIdentification/thumbnail.png">
+                            </a>
+                            <a href="AuthorIdentification/index.html" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                
+                                <a href="AuthorIdentification/index.html">Author Identification</a>
+                            </h4>
+                            <p class="item-folio__cat">
+                                Python, Pandas, Jupyter Notebook
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>A project that aims to determine if a book is written by a certain author depending on word usage.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+            </div> <!-- end masonry -->
+
+        </div> <!-- end masonry-wrap -->
+
+    </section> <!-- end s-work -->
+
+
+    <!-- testimonies
+    ================================================== -->
+    <!--section class="s-testimonials">
+    
+        <div class="row testimonials" data-aos="fade-up">
+
+            <div class="column large-full testimonials__slider">
+
+                <div class="testimonials__slide">
+                    <p>Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
+                    Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
+                    Laudantium quia consequatur molestias delectus culpa.</p>
+                    <div class="testimonials__info">
+                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
+                        <cite class="testimonials__cite">
+                            <strong>Tim Cook</strong>
+                            <span>CEO, Apple</span>
+                        </cite>
+                    </div>
+                </div> <!-- end testimonials__slide -->
+
+                <!--div class="testimonials__slide">
+                    <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                    Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+                        Quasi voluptas eius distinctio. Atque eos maxime.</p>
+                    <div class="testimonials__info">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <cite class="testimonials__cite">
+                            <strong>Sundar Pichai</strong>
+                            <span>CEO, Google</span>
+                        </cite>
+                    </div>
+                </div> <!-- end testimonials__slide -->
+
+                <!--div class="testimonials__slide">
+                    <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                    Voluptatem dignissimos ut.</p>
+                    <div class="testimonials__info">
+                        <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonials__avatar">
+                        <cite class="testimonials__cite">
+                            <strong>Satya Nadella</strong>
+                            <span>CEO, Microsoft</span>
+                        </cite>
+                    </div>
+                </div> <!--end testimonials__slide -->
+                
+            </div> <!-- end testimonials__slider -->
+
+        </div> <!-- end testimonials -->
+
+    </section> <!-- end s-testimonials
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact ss-dark target-section">
+
+        <div class="row heading-block" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading">Get In Touch</h2>
+            </div>
+        </div>
+
+        <div class="row contact-main" data-aos="fade-up">
+            <div class="column large-full">
+                <!-- <p class="contact-email">
+                    <a href="mailto:wyatt.revalee@gmail.com">wyatt.revalee@gmail.com</a>
+                </p> -->
+
+                <p class="section-desc">
+                <!-- I'm happy to connect, listen and help. Let's work together to build
+                something awesome, and turn some great ideas into even greater products. -->
+                <a href="mailto:wyatt.revalee@gmail.com">Email Me</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
+
+            <!-- <div class="column large-5 medium-full contact-phone">
+                <h4>Call Or Text Me</h4>
+                <a href="tel:197-543-2345">+111 111 1111</a>
+            </div> -->
+
+            <div class="column large-7 medium-full contact-social">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/wyatt-revalee-a632901a9/" title="Linkedin">Linkedin</a></li>
+                    <li><a href="https://github.com/wyatt-revalee" title="Github">Github</a></li>
+                </ul>
+            </div>
+
+        </div> <!-- end contact-infos -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="column large-full ss-copyright">
+                <!-- <span>© Copyright Epitome 2019</span>  -->
+                <span>Original design by <a href="https://www.styleshout.com/meet-epitome-a-free-resume-and-personal-portfolio-website-template/"> StyleShout</a></span>
+            </div>            
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
